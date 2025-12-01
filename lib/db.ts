@@ -1,6 +1,7 @@
 import "reflect-metadata";
 import { DataSource } from "typeorm";
 import { User } from "./entity/user";
+import { Token } from "./entity/token";
 
 // 全局数据源实例
 let AppDataSource: DataSource | null = null;
@@ -22,7 +23,7 @@ export async function getDataSource(): Promise<DataSource> {
             username: process.env.DATABASE_USER || "postgres",
             password: process.env.DATABASE_PASSWORD || "postgres",
             database: process.env.DATABASE_DBNAME || "mockify",
-            entities: [User],
+            entities: [User, Token],
             synchronize: process.env.NODE_ENV !== "production",
             logging: process.env.NODE_ENV === "development",
         });
