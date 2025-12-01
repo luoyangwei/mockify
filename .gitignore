@@ -5,3 +5,8 @@ build/
 tmp/
 temp/
 .next/
+
+.env
+.env.local
+.env.test
+.env.production
