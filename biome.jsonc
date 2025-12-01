@@ -1,0 +1,54 @@
+{
+	"linter": {
+		"rules": {
+			"style": {
+				"noParameterAssign": "error",
+				"useAsConstAssertion": "error",
+				"useDefaultParameterLast": "error",
+				"useEnumInitializers": "error",
+				"useSelfClosingElements": "error",
+				"useSingleVarDeclarator": "error",
+				"noUnusedTemplateLiteral": "error",
+				"useNumberNamespace": "error",
+				"noInferrableTypes": "error",
+				"noUselessElse": "error"
+			}
+		},
+		"includes": [
+			"**",
+			"!test/**"
+		]
+	},
+	"files": {
+		"includes": [
+			"app/**/*.tsx",
+			"components/**/*.tsx",
+			"lib/**/*.ts",
+			"types/**/*.ts",
+			"utils/**/*.ts",
+			"hooks/**/*.ts",
+			"services/**/*.ts",
+			"stores/**/*.ts",
+			"contexts/**/*.ts",
+			"**/*.json",
+			"**/*.jsonc",
+			"**/*.mjs"
+		]
+	},
+	"formatter": {
+		"indentStyle": "space",
+		"lineWidth": 80,
+		"indentWidth": 4
+	},
+	// "javascript": {
+	// 	"formatter": {
+	// 		"quoteStyle": "single", // 默认为 `double`
+	// 		"lineWidth": 80 // 覆盖 `formatter.lineWidth`
+	// 	}
+	// },
+	"json": {
+		"formatter": {
+			"enabled": false
+		}
+	}
+}
